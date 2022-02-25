@@ -1,0 +1,25 @@
+.lrpd-shopping-list {
+	width: 100%;
+}
+
+.lrdp-pizza-list {
+	list-style-type: none;
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+button {
+	margin: 0 0 0 50px;
+}
+
+.menu-categories {
+	margin: auto;
+	display: flex;
+	margin-top: 20px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+}

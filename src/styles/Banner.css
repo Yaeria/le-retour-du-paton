@@ -1,0 +1,11 @@
+.lrdp-banner {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 32px;
+    border-bottom: solid 3px black;
+}
+
+.lrdp-logo{
+    height: 50%;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+.lrdp-pizza-item-cover {
+	height: 150px;
+	width: 150px;
+	border-radius: 20px;
+	margin: auto;
+}
+
+.lrdp-pizza-item {
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.lrdp-pizza-item-price{
+	position: absolute;
+	border-radius: 20px 20pxx 20px 0;
+	background-color: #31b472;
+	color: white;
+	padding: 15px;
+	right: 0;
+	top: 0;
+	font-weight: 500;
+}
