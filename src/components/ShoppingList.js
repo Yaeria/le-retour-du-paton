@@ -2,11 +2,13 @@
 import React, { useState } from 'react'
 import {PizzaList} from '../datas/PizzaList'
 import '../styles/ShoppingList.css'
+import Categories from './Categories'
 import PizzaItem from './PizzaItem'
 
 
 
 function ShoppingList({ cart, updateCart}){
+    const [activeCategory, setActiveCategory] = useState('')
     const categories = PizzaList.reduce(
         (acc, pizza) =>
             acc.includes(pizza.category) ? acc : acc.concat(pizza.category),
@@ -32,26 +34,27 @@ function ShoppingList({ cart, updateCart}){
         return(
             <div className='lrdp-shopping-list'>
                 
-            <div>
-                <select className="menu-categories">
-                        {categories.map((cat) =>(
-                            <option key={cat}>{cat}</option>
-                        ))}
-                </select>
-            </div>
+            <Categories
+                    categories ={categories}
+                    setActiveCategory={setActiveCategory}
+                    activeCategory={activeCategory}
+            />        
 
                 <ul className="lrdp-pizza-list">
-                    {PizzaList.map(({id, cover, name, hot, price}) => (
+                    {PizzaList.map(({id, cover, name, hot, price, category }) => 
+                        
+                        !activeCategory || activeCategory === category ? (
                         <div key={id}>
                             <PizzaItem
-                             cover={cover} 
-                             name={name}
-                             price={price}
-                            //  hot={hot}
+                                 cover={cover} 
+                                 name={name}
+                                 price={price}
+                                //  hot={hot}
                             />    
                         <button onClick={() => addToCart(name, price)}>Ajouter</button>
                         </div>
-                    ))}
+                 ) : null
+                    )}
                 </ul>
             </div>
         )
