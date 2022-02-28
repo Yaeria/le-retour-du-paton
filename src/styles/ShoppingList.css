@@ -1,4 +1,4 @@
-.lrpd-shopping-list {
+.lrdp-shopping-list {
 	width: 100%;
 	justify-content: center;
 }
@@ -11,6 +11,11 @@
 	justify-content: center;
 }
 
+.description{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
 
 button {
 	margin: 0 0 0 50px;

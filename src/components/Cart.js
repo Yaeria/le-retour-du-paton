@@ -1,18 +1,17 @@
-
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/Cart.css'
 
 
 function Cart({ cart, updateCart }){
-    const [isOpen, setIsOpen] = useState(true)
-	
-
-	
-
+    const [isOpen, setIsOpen] = useState(true)	
     const total = cart.reduce(
         (acc,PizzaType) => acc + PizzaType.amount * PizzaType.price,0
     )
 
+    useEffect(() => {
+        document.title = `Le retour du paton`
+    })
+     
     return isOpen ?( 
       
     <div className ="lrdp-cart">
@@ -25,7 +24,7 @@ function Cart({ cart, updateCart }){
                 <ul>
                     {cart.map(({ name, price, amount }, index) => (
                         <div key={`${name}-${index}`}>
-                            {name} {price}€ *{amount}
+                            {name} {price} € *{amount}
                         </div>
                     ))}
                 </ul>
@@ -33,7 +32,7 @@ function Cart({ cart, updateCart }){
                     <button onClick={() => updateCart([])}>Vider le panier</button>
             </div>    
     ) : (
-            <div>Votre panier est vide</div>
+            <div className="Cart-clear">Votre panier est vide</div>
     )}
     </div>
     

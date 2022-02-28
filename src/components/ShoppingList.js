@@ -5,8 +5,6 @@ import '../styles/ShoppingList.css'
 import Categories from './Categories'
 import PizzaItem from './PizzaItem'
 
-
-
 function ShoppingList({ cart, updateCart}){
     const [activeCategory, setActiveCategory] = useState('')
     const categories = PizzaList.reduce(
@@ -45,24 +43,18 @@ function ShoppingList({ cart, updateCart}){
                         
                         !activeCategory || activeCategory === category ? (
                         <div key={id}>
-                            <PizzaItem
+                            <PizzaItem className="description"
                                  cover={cover} 
                                  name={name}
                                  price={price}
-                                //  hot={hot}
+                               //  hot={hot}
                             />    
-                        <button onClick={() => addToCart(name, price)}>Ajouter</button>
+                                <button onClick={() => addToCart(name, price)}>Ajouter</button>
                         </div>
                  ) : null
                     )}
                 </ul>
             </div>
         )
-
-
 	}
-
-
-
-
 export default ShoppingList
