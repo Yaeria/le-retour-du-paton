@@ -3,6 +3,9 @@
     text-align: center;
     padding: 32px;
     border-bottom: solid 3px black;
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .lrdp-logo{
