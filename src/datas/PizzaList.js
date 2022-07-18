@@ -1,14 +1,16 @@
+// import { AirlineSeatReclineNormalTwoTone } from '@material-ui/icons'
 import montagnarde from '../assets/pizza-montagnarde.jpg'
 
 export const PizzaList = [
     {
-        name: 'montagnarde',
-        category: 'fromages',
+        name: 'végétarienne',
+        category: 'spéciales',
         id: '1fro',
         isBestSale: false,
         hot: 3,
         cover: montagnarde,
-        price: 10
+        price: 10,
+        recette: `Tomate, champignons, ail, poivrons, courgettes grillées, mozzarella, artichauts`
     },
   
     {
@@ -19,7 +21,8 @@ export const PizzaList = [
         isSpecialOffer: true,
         hot: 2,
         cover: montagnarde,
-        price: 12
+        price: 12,
+        recette: `Crème fraîche, pomme de terre, reblochon, oignons`
     },
     
     {
@@ -30,17 +33,19 @@ export const PizzaList = [
         isSpecialOffer: true,
         hot: 3,
         cover: montagnarde,
-        price: 10
+        price: 10,
+        recette: 'base sauce tomate, emmental, mozzarella, gorgonzollar, parmesan'
     },
    
     {
         name: 'chèvre miel',
-        category: 'formages',
+        category: 'fromages',
         id: '4fro',
         isBestSale: true,
         hot: 3,
         cover: montagnarde,
-        price: 11
+        price: 11,
+        recette: `Crème fraîche, chèvre, mozzarella, miel`
     },
 
     {
@@ -50,7 +55,8 @@ export const PizzaList = [
         isBestSale: true,
         hot: 3,
         cover: montagnarde,
-        price: 12    
+        price: 12,
+        recette: `Tomate, champignons, boeuf haché, oignons, beurre d'ail, emmental, origan`    
     },
 
     {
@@ -60,7 +66,8 @@ export const PizzaList = [
         isBestSale: true,
         hot: 3,
         cover: montagnarde,
-        price: 10
+        price: 10, 
+        recette: `Tomate, boeuf haché, merguez, chorizo, poudre de piment, emmental`
     },
 
     {
@@ -70,7 +77,8 @@ export const PizzaList = [
         isBestSale: false,
         hot: 3,
         cover: montagnarde,
-        price: 8
+        price: 8,
+        recette: `Crème fraîche, emmental, viande de Kebab, oignons, sauce pita`
     },
 
     {
@@ -79,7 +87,8 @@ export const PizzaList = [
         id: '1spe',
         hot: 3,
         cover: montagnarde,
-        price: 10
+        price: 10,
+        recette: 'Tomate, jambon, lardons fumés, champignons, chorizo, oignons, ail, oeuf, crème, emmental, origan'
     },
 
     {
@@ -87,7 +96,8 @@ export const PizzaList = [
         category: 'spéciales',
         id: '2spe',
         cover: montagnarde,
-        price: 8
+        price: 8,
+        recette: `Tomate, filet de poulet, emmental, ananas`
     },
 
     {
@@ -95,7 +105,8 @@ export const PizzaList = [
         category: 'spéciales',
         id: '3spe',
         cover: montagnarde,
-        price: 13
+        price: 13,
+        recette: `Tomate, lardons fumés, champignons, saucisson à l'ail, beurre d'ail, emmental, origan`
     }
 
 ]

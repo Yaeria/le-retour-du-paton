@@ -17,6 +17,8 @@
 	flex-direction: column;
 	text-transform: capitalize;
 	position: relative;
+	width: 200px;
+	padding: 10px;
 }
 
 .lrdp-pizza-item-price{
@@ -28,4 +30,11 @@
 	right: 0;
 	top: 0;
 	font-weight: 500;
+}
+
+.lrdp-pizza-item-recette{
+	padding: 10px;
+	font-size: 10px;
+	margin: 20px 10px;
+	height: 50px;
 }

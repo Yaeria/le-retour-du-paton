@@ -9,6 +9,18 @@
 }
 
 .lrdp-logo{
-    height: 10%;
+    height: 75vh;
     width: 100%;
+}
+
+.lrdp-banner-account{
+    position: absolute;
+    right: 50px;
+}
+
+.Btn-login{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 150px;
 }

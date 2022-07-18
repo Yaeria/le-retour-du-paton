@@ -1,22 +1,16 @@
 import React from 'react'
-import CareScale from './CareScale'
 import '../styles/PizzaItem.css'
 
-function PizzaItem({id, cover, name, price, hot}){
-    function handleClick(pizzaName){
-        alert (`Vous voulez acheter 1 ${pizzaName} ?`)
-    }
+function PizzaItem({id, cover, name, price, recette}){
+    
 
-    // function handleClick(e){
-    //     console.log('Ceci est mon event :', e)
-    // }
     return (
-        <li key={id} className='lrdp-pizza-item' onClick={() =>handleClick(name)}>
+        <li key={id} className='lrdp-pizza-item'>
             <img className='lrdp-pizza-item-cover' src={cover} alt={`${name} cover`} />
             <span className='lrdp-pizza-item-name'>{name}</span>
             <span className='lrdp-pizza-item-price'>{price}€</span>
+            <span className='lrdp-pizza-item-recette'>{recette}</span>
             <div>
-                {/* <CareScale careType='hot' scaleValue={hot} /> */}
             </div>
         </li>
     )
